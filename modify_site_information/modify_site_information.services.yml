@@ -1,0 +1,5 @@
+services:
+  modify_site_information.route_subscriber:
+    class: Drupal\modify_site_information\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

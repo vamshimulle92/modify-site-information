@@ -1,0 +1,6 @@
+modify_site_information.get_node_and_siteapi:
+  path: '/check-node/{siteapi}/{nid}'
+  defaults:
+    _controller: '\Drupal\modify_site_information\Controller\GetNodeWithSiteApiKey::checkaccess'
+  requirements:
+    _permission: 'access content'
